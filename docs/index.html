@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering College | Programs & Eligibility</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Department of Engineering & Technology</h1>
+        <p>Explore Undergraduate & Postgraduate Programs</p>
+    </div>
+</header>
+
+<main class="container">
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search courses (e.g., Computer Science, AI, Mechanical)...">
+        <select id="levelFilter">
+            <option value="ALL">All Programs</option>
+            <option value="UG">Undergraduate (B.E. / B.Tech)</option>
+            <option value="PG">Postgraduate (M.Tech)</option>
+        </select>
+    </div>
+
+    <div id="courseGrid" class="course-grid"></div>
+</main>
+
+<!-- Course Details Modal -->
+<div id="courseModal" class="modal hidden">
+    <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
+        <span id="modalBadge" class="badge"></span>
+        <h2 id="modalTitle"></h2>
+        <p class="duration"><strong>Duration:</strong> <span id="modalDuration"></span></p>
+        <div class="modal-section">
+            <h3>Course Description</h3>
+            <p id="modalDescription"></p>
+        </div>
+        <div class="modal-section">
+            <h3>Eligibility Criteria</h3>
+            <p id="modalEligibility"></p>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
